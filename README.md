@@ -29,6 +29,17 @@ npm run dev
 
 Then open the local dev URL shown in the terminal (usually `http://localhost:5173`).
 
+### 3. Connect frontend to backend
+
+The frontend reads the backend API base URL from Vite environment variables.
+Create a file at `client/.env` with:
+
+```bash
+VITE_API_BASE=http://localhost:5000
+```
+
+If your backend is deployed, set `VITE_API_BASE` to the deployed backend URL.
+
 ## API Endpoints
 
 - `POST /calculate-power`
